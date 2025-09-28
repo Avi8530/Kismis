@@ -1,0 +1,83 @@
+.health_section {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+.health_carousel-container {
+  margin-bottom: 30px;
+}
+
+.carousel-wrap {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.owl-carousel .item {
+  display: inline-block;
+  width: 24%;
+  /* Adjusted to 24% for 4 items in one row */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img-box img {
+  width: 100%;
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.detail-box {
+  padding: 15px 0;
+}
+
+.star_container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.star_container i {
+  color: #f39c12;
+}
+
+.text h6 {
+  margin: 5px 0;
+}
+
+.text .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.see-more-btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.see-more-btn:hover {
+  background-color: #2ecc71;
+}
+
+

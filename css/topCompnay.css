@@ -1,0 +1,136 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: (src="img/viewMore/b1.webp") no-repeat center center/cover;
+}
+
+h1,
+h2,
+h3 {
+  color: #222;
+}
+
+/* Top fade-in animation */
+.Top-fade-in {
+  animation: Top-fadeIn 1.5s ease-in-out;
+}
+
+@keyframes Top-fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Company Card Styling */
+.Top-company-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 380px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+  border: 1px solid #ddd;
+}
+
+.Top-company-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-color: #007bff;
+}
+
+.Top-company-card img {
+  width: 310px;
+  height: 210px;
+  object-fit: cover;
+  
+}
+
+.Top-company-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.Top-company-card p {
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+  margin-top: 12px;
+}
+
+/* Product Styling */
+.grid div {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid div:hover {
+  transform: translateY(-5px);
+}
+
+.grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.grid h3 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.grid p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Grid Layout */
+.Top-company-grid,
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 30px;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+
+  .Top-company-grid,
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .Top-company-grid,
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+
+  .Top-company-grid,
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
